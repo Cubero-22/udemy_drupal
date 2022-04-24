@@ -1,0 +1,7 @@
+hello.admin:
+  title: Hello Drupal
+  description: Show a message
+  parent: system.admin_config_development
+  route_name: hello.content
+  weight: 100
+

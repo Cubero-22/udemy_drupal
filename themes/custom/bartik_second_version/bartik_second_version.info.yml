@@ -1,0 +1,45 @@
+# This theme is marked as @internal. It is intended to evolve and change over
+# minor releases.
+# Change record https://www.drupal.org/node/2673014.
+# As the UI of Drupal improves between minor versions, the mark up and assets
+# in the Bartik theme will change. The Bartik theme is not backwards
+
+name: Bartik Second Version
+type: theme
+base theme: bartik
+description: 'A flexible, recolorable theme (second version child) with many regions and a responsive, mobile-first layout.'
+package: Core
+core_version_requirement: 9.x
+version: VERSION
+#Librerias css o js personalizadas a las cuales queremos lanzar al nivel que necesitemos
+
+#Sobreescibiendo librerias tipo css, concretamente el archivo site-branding.css
+libraries-override:
+  bartik/global-styling:
+    css:
+      component:
+        css/components/site-branding.css: css/estilos.css
+      theme:
+        css/colors.css: css/estilos.css
+
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  featured_top: 'Featured top'
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  featured_bottom_first: 'Featured bottom first'
+  featured_bottom_second: 'Featured bottom second'
+  featured_bottom_third: 'Featured bottom third'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer_fourth: 'Footer fourth'
+  footer_fifth: 'Footer fifth'
+

@@ -1,0 +1,13 @@
+name: Custom migration
+description: Provides functionalities for migrations
+package: Custom
+type: module
+core_version_requirement: ^8.8.0 || ^9
+# Information added by Drupal.org packaging script on 2021-09-22
+version: '1.0'
+dependencies:
+  - drupal:migrate
+  - migrate_plus:migrate_plus
+  - migrate_tools:migrate_tools
+  - migrate_source_cvs:migrate_source_cvs
+

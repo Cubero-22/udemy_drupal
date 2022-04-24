@@ -1,0 +1,7 @@
+name: General
+type: module
+package: Custom
+description: Provides generals funcionalities
+core: 8.x
+version: 1.0
+
